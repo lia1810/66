@@ -1,5 +1,4 @@
-const gatos = [
-    {
+const gatos = [{
         name: "Rodolfo",
         shortDesc: "Tiene 4 años, le gusta perseguir mariposas, se lleva bien con niños y con otros gatos.",
         longDesc: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit libero dolorum aliquam error expedita distinctio porro ducimus ex repellendus laboriosam. Sequi, doloribus autem? Unde commodi assumenda consequatur ratione numquam distinctio nihil blanditiis quae debitis sed eligendi modi architecto omnis aspernatur officia molestiae, vero nemo a quibusdam? Voluptatum eveniet blanditiis impedit.",
@@ -80,11 +79,11 @@ const form = document.querySelector(`form`);
 form.onsubmit = e => {
     e.preventDefault();
 
-const select = document.querySelector(`select`);
-console.log(select.selectedIndex);
+    const select = document.querySelector(`select`);
+    console.log(select.selectedIndex);
 
-const opcionElegida = select.options[select.selectedIndex].value
-console.log(opcionElegida)
-alert(`Elegiste la opcion ${opcionElegida}`)
+    const opcionElegida = select.options[select.selectedIndex].value
+    console.log(opcionElegida)
+    alert(`Elegiste la opcion ${opcionElegida}`)
 
 }
